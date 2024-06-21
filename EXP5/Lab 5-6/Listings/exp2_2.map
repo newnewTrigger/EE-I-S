@@ -1,0 +1,452 @@
+Component: ARM Compiler 5.06 update 4 (build 422) Tool: armlink [4d35d2]
+
+==============================================================================
+
+Section Cross References
+
+    exp5_6.o(i.DevicesInit) refers to sysctl.o(i.SysCtlClockFreqSet) for SysCtlClockFreqSet
+    exp5_6.o(i.DevicesInit) refers to fpu.o(i.FPULazyStackingEnable) for FPULazyStackingEnable
+    exp5_6.o(i.DevicesInit) refers to fpu.o(i.FPUEnable) for FPUEnable
+    exp5_6.o(i.DevicesInit) refers to exp5_6.o(i.GPIOInit) for GPIOInit
+    exp5_6.o(i.DevicesInit) refers to exp5_6.o(i.SysTickInit) for SysTickInit
+    exp5_6.o(i.DevicesInit) refers to exp5_6.o(i.UARTInit) for UARTInit
+    exp5_6.o(i.DevicesInit) refers to interrupt.o(i.IntMasterEnable) for IntMasterEnable
+    exp5_6.o(i.DevicesInit) refers to exp5_6.o(.data) for ui32SysClock
+    exp5_6.o(i.GPIOInit) refers to sysctl.o(i.SysCtlPeripheralEnable) for SysCtlPeripheralEnable
+    exp5_6.o(i.GPIOInit) refers to sysctl.o(i.SysCtlPeripheralReady) for SysCtlPeripheralReady
+    exp5_6.o(i.GPIOInit) refers to gpio.o(i.GPIOPinTypeGPIOOutput) for GPIOPinTypeGPIOOutput
+    exp5_6.o(i.LCD_PORT_init) refers to sysctl.o(i.SysCtlPeripheralEnable) for SysCtlPeripheralEnable
+    exp5_6.o(i.LCD_PORT_init) refers to sysctl.o(i.SysCtlPeripheralReady) for SysCtlPeripheralReady
+    exp5_6.o(i.LCD_PORT_init) refers to gpio.o(i.GPIOPinTypeGPIOOutput) for GPIOPinTypeGPIOOutput
+    exp5_6.o(i.LCD_PORT_init) refers to gpio.o(i.GPIOPinTypeGPIOInput) for GPIOPinTypeGPIOInput
+    exp5_6.o(i.LCD_delay) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    exp5_6.o(i.LCD_delay_us) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    exp5_6.o(i.SysTickInit) refers to systick.o(i.SysTickPeriodSet) for SysTickPeriodSet
+    exp5_6.o(i.SysTickInit) refers to systick.o(i.SysTickEnable) for SysTickEnable
+    exp5_6.o(i.SysTickInit) refers to systick.o(i.SysTickIntEnable) for SysTickIntEnable
+    exp5_6.o(i.SysTickInit) refers to exp5_6.o(.data) for ui32SysClock
+    exp5_6.o(i.SysTick_Handler) refers to exp5_6.o(.data) for clock1s
+    exp5_6.o(i.UARTInit) refers to sysctl.o(i.SysCtlPeripheralEnable) for SysCtlPeripheralEnable
+    exp5_6.o(i.UARTInit) refers to sysctl.o(i.SysCtlPeripheralReady) for SysCtlPeripheralReady
+    exp5_6.o(i.UARTInit) refers to gpio.o(i.GPIOPinConfigure) for GPIOPinConfigure
+    exp5_6.o(i.UARTInit) refers to gpio.o(i.GPIOPinTypeUART) for GPIOPinTypeUART
+    exp5_6.o(i.UARTInit) refers to uart.o(i.UARTConfigSetExpClk) for UARTConfigSetExpClk
+    exp5_6.o(i.UARTInit) refers to exp5_6.o(.data) for ui32SysClock
+    exp5_6.o(i.UARTStringPut) refers to uart.o(i.UARTCharPut) for UARTCharPut
+    exp5_6.o(i.UARTStringPut) refers to exp5_6.o(i.DelayMilliSec) for DelayMilliSec
+    exp5_6.o(i.clear_screen) refers to exp5_6.o(i.transfer_command_lcd) for transfer_command_lcd
+    exp5_6.o(i.clear_screen) refers to jxl.o(i.transfer_command_lcd) for transfer_command_lcd
+    exp5_6.o(i.clear_screen) refers to exp5_6.o(i.transfer_data_lcd) for transfer_data_lcd
+    exp5_6.o(i.clear_screen) refers to jxl.o(i.transfer_data_lcd) for transfer_data_lcd
+    exp5_6.o(i.disp_number) refers to exp5_6.o(i.display_GB2312_string) for display_GB2312_string
+    exp5_6.o(i.disp_number) refers to jxl.o(i.display_GB2312_string) for display_GB2312_string
+    exp5_6.o(i.display_128x64) refers to exp5_6.o(i.lcd_address) for lcd_address
+    exp5_6.o(i.display_128x64) refers to jxl.o(i.lcd_address) for lcd_address
+    exp5_6.o(i.display_128x64) refers to exp5_6.o(i.transfer_data_lcd) for transfer_data_lcd
+    exp5_6.o(i.display_128x64) refers to jxl.o(i.transfer_data_lcd) for transfer_data_lcd
+    exp5_6.o(i.display_GB2312_string) refers to exp5_6.o(i.get_and_write_16x16) for get_and_write_16x16
+    exp5_6.o(i.display_GB2312_string) refers to jxl.o(i.get_and_write_16x16) for get_and_write_16x16
+    exp5_6.o(i.display_GB2312_string) refers to exp5_6.o(i.get_and_write_8x16) for get_and_write_8x16
+    exp5_6.o(i.display_GB2312_string) refers to jxl.o(i.get_and_write_8x16) for get_and_write_8x16
+    exp5_6.o(i.display_GB2312_string) refers to exp5_6.o(.data) for fontaddr
+    exp5_6.o(i.display_GB2312_string) refers to jxl.o(.data) for fontaddr
+    exp5_6.o(i.display_graphic_16x16) refers to exp5_6.o(i.lcd_address) for lcd_address
+    exp5_6.o(i.display_graphic_16x16) refers to jxl.o(i.lcd_address) for lcd_address
+    exp5_6.o(i.display_graphic_16x16) refers to exp5_6.o(i.transfer_data_lcd) for transfer_data_lcd
+    exp5_6.o(i.display_graphic_16x16) refers to jxl.o(i.transfer_data_lcd) for transfer_data_lcd
+    exp5_6.o(i.display_graphic_5x8) refers to exp5_6.o(i.lcd_address) for lcd_address
+    exp5_6.o(i.display_graphic_5x8) refers to jxl.o(i.lcd_address) for lcd_address
+    exp5_6.o(i.display_graphic_5x8) refers to exp5_6.o(i.transfer_data_lcd) for transfer_data_lcd
+    exp5_6.o(i.display_graphic_5x8) refers to jxl.o(i.transfer_data_lcd) for transfer_data_lcd
+    exp5_6.o(i.display_graphic_8x16) refers to exp5_6.o(i.lcd_address) for lcd_address
+    exp5_6.o(i.display_graphic_8x16) refers to jxl.o(i.lcd_address) for lcd_address
+    exp5_6.o(i.display_graphic_8x16) refers to exp5_6.o(i.transfer_data_lcd) for transfer_data_lcd
+    exp5_6.o(i.display_graphic_8x16) refers to jxl.o(i.transfer_data_lcd) for transfer_data_lcd
+    exp5_6.o(i.display_string_5x8) refers to exp5_6.o(i.get_and_write_5x8) for get_and_write_5x8
+    exp5_6.o(i.display_string_5x8) refers to jxl.o(i.get_and_write_5x8) for get_and_write_5x8
+    exp5_6.o(i.display_string_5x8) refers to exp5_6.o(.data) for fontaddr
+    exp5_6.o(i.display_string_5x8) refers to jxl.o(.data) for fontaddr
+    exp5_6.o(i.get_and_write_16x16) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    exp5_6.o(i.get_and_write_16x16) refers to exp5_6.o(i.send_command_to_ROM) for send_command_to_ROM
+    exp5_6.o(i.get_and_write_16x16) refers to jxl.o(i.send_command_to_ROM) for send_command_to_ROM
+    exp5_6.o(i.get_and_write_16x16) refers to exp5_6.o(i.lcd_address) for lcd_address
+    exp5_6.o(i.get_and_write_16x16) refers to jxl.o(i.lcd_address) for lcd_address
+    exp5_6.o(i.get_and_write_16x16) refers to exp5_6.o(i.get_data_from_ROM) for get_data_from_ROM
+    exp5_6.o(i.get_and_write_16x16) refers to exp5_6.o(i.transfer_data_lcd) for transfer_data_lcd
+    exp5_6.o(i.get_and_write_16x16) refers to jxl.o(i.transfer_data_lcd) for transfer_data_lcd
+    exp5_6.o(i.get_and_write_5x8) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    exp5_6.o(i.get_and_write_5x8) refers to exp5_6.o(i.send_command_to_ROM) for send_command_to_ROM
+    exp5_6.o(i.get_and_write_5x8) refers to jxl.o(i.send_command_to_ROM) for send_command_to_ROM
+    exp5_6.o(i.get_and_write_5x8) refers to exp5_6.o(i.lcd_address) for lcd_address
+    exp5_6.o(i.get_and_write_5x8) refers to jxl.o(i.lcd_address) for lcd_address
+    exp5_6.o(i.get_and_write_5x8) refers to exp5_6.o(i.get_data_from_ROM) for get_data_from_ROM
+    exp5_6.o(i.get_and_write_5x8) refers to exp5_6.o(i.transfer_data_lcd) for transfer_data_lcd
+    exp5_6.o(i.get_and_write_5x8) refers to jxl.o(i.transfer_data_lcd) for transfer_data_lcd
+    exp5_6.o(i.get_and_write_8x16) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    exp5_6.o(i.get_and_write_8x16) refers to exp5_6.o(i.send_command_to_ROM) for send_command_to_ROM
+    exp5_6.o(i.get_and_write_8x16) refers to jxl.o(i.send_command_to_ROM) for send_command_to_ROM
+    exp5_6.o(i.get_and_write_8x16) refers to exp5_6.o(i.lcd_address) for lcd_address
+    exp5_6.o(i.get_and_write_8x16) refers to jxl.o(i.lcd_address) for lcd_address
+    exp5_6.o(i.get_and_write_8x16) refers to exp5_6.o(i.get_data_from_ROM) for get_data_from_ROM
+    exp5_6.o(i.get_and_write_8x16) refers to exp5_6.o(i.transfer_data_lcd) for transfer_data_lcd
+    exp5_6.o(i.get_and_write_8x16) refers to jxl.o(i.transfer_data_lcd) for transfer_data_lcd
+    exp5_6.o(i.get_data_from_ROM) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    exp5_6.o(i.get_data_from_ROM) refers to gpio.o(i.GPIOPinRead) for GPIOPinRead
+    exp5_6.o(i.initial_lcd) refers to exp5_6.o(i.LCD_PORT_init) for LCD_PORT_init
+    exp5_6.o(i.initial_lcd) refers to jxl.o(i.LCD_PORT_init) for LCD_PORT_init
+    exp5_6.o(i.initial_lcd) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    exp5_6.o(i.initial_lcd) refers to exp5_6.o(i.LCD_delay) for LCD_delay
+    exp5_6.o(i.initial_lcd) refers to jxl.o(i.LCD_delay) for LCD_delay
+    exp5_6.o(i.initial_lcd) refers to exp5_6.o(i.transfer_command_lcd) for transfer_command_lcd
+    exp5_6.o(i.initial_lcd) refers to jxl.o(i.transfer_command_lcd) for transfer_command_lcd
+    exp5_6.o(i.lcd_address) refers to exp5_6.o(i.transfer_command_lcd) for transfer_command_lcd
+    exp5_6.o(i.lcd_address) refers to jxl.o(i.transfer_command_lcd) for transfer_command_lcd
+    exp5_6.o(i.main) refers to exp5_6.o(i.DevicesInit) for DevicesInit
+    exp5_6.o(i.main) refers to sysctl.o(.emb_text) for SysCtlDelay
+    exp5_6.o(i.main) refers to exp5_6.o(i.initial_lcd) for initial_lcd
+    exp5_6.o(i.main) refers to jxl.o(i.initial_lcd) for initial_lcd
+    exp5_6.o(i.main) refers to exp5_6.o(i.UARTStringPut) for UARTStringPut
+    exp5_6.o(i.main) refers to exp5_6.o(i.clear_screen) for clear_screen
+    exp5_6.o(i.main) refers to jxl.o(i.clear_screen) for clear_screen
+    exp5_6.o(i.main) refers to exp5_6.o(i.display_GB2312_string) for display_GB2312_string
+    exp5_6.o(i.main) refers to jxl.o(i.display_GB2312_string) for display_GB2312_string
+    exp5_6.o(i.main) refers to exp5_6.o(i.disp_number) for disp_number
+    exp5_6.o(i.main) refers to exp5_6.o(i.refresh_temp_in) for refresh_temp_in
+    exp5_6.o(i.main) refers to exp5_6.o(i.trans_temp) for trans_temp
+    exp5_6.o(i.main) refers to exp5_6.o(i.refresh_temp_lcd) for refresh_temp_lcd
+    exp5_6.o(i.main) refers to exp5_6.o(i.refresh_volt_in) for refresh_volt_in
+    exp5_6.o(i.main) refers to exp5_6.o(i.refresh_volt_lcd) for refresh_volt_lcd
+    exp5_6.o(i.main) refers to exp5_6.o(.data) for ui32SysClock
+    exp5_6.o(i.main) refers to uart.o(i.UARTCharPut) for UARTCharPut
+    exp5_6.o(i.main) refers to exp5_6.o(i.LCD_delay) for LCD_delay
+    exp5_6.o(i.main) refers to jxl.o(i.LCD_delay) for LCD_delay
+    exp5_6.o(i.refresh_temp_in) refers to exp5_6.o(.data) for i16Temperature1
+    exp5_6.o(i.refresh_temp_lcd) refers to exp5_6.o(i.display_GB2312_string) for display_GB2312_string
+    exp5_6.o(i.refresh_temp_lcd) refers to jxl.o(i.display_GB2312_string) for display_GB2312_string
+    exp5_6.o(i.refresh_temp_lcd) refers to exp5_6.o(i.disp_number) for disp_number
+    exp5_6.o(i.refresh_temp_lcd) refers to exp5_6.o(.data) for temp1
+    exp5_6.o(i.refresh_volt_in) refers to exp5_6.o(.data) for ui32ADC0Value
+    exp5_6.o(i.refresh_volt_lcd) refers to exp5_6.o(i.disp_number) for disp_number
+    exp5_6.o(i.refresh_volt_lcd) refers to exp5_6.o(.data) for volt
+    exp5_6.o(i.send_command_to_ROM) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    exp5_6.o(i.send_command_to_ROM) refers to exp5_6.o(i.LCD_delay_us) for LCD_delay_us
+    exp5_6.o(i.send_command_to_ROM) refers to jxl.o(i.LCD_delay_us) for LCD_delay_us
+    exp5_6.o(i.trans_temp) refers to dflt_clz.o(x$fpl$dfltu) for __aeabi_ui2d
+    exp5_6.o(i.trans_temp) refers to dmul.o(x$fpl$dmul) for __aeabi_dmul
+    exp5_6.o(i.trans_temp) refers to dflt_clz.o(x$fpl$dflt) for __aeabi_i2d
+    exp5_6.o(i.trans_temp) refers to daddsub_clz.o(x$fpl$dadd) for __aeabi_dadd
+    exp5_6.o(i.trans_temp) refers to dfixu.o(x$fpl$dfixu) for __aeabi_d2uiz
+    exp5_6.o(i.trans_temp) refers to exp5_6.o(.data) for temp1
+    exp5_6.o(i.transfer_command_lcd) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    exp5_6.o(i.transfer_data_lcd) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    jxl.o(i.LCD_PORT_init) refers to sysctl.o(i.SysCtlPeripheralEnable) for SysCtlPeripheralEnable
+    jxl.o(i.LCD_PORT_init) refers to sysctl.o(i.SysCtlPeripheralReady) for SysCtlPeripheralReady
+    jxl.o(i.LCD_PORT_init) refers to gpio.o(i.GPIOPinTypeGPIOOutput) for GPIOPinTypeGPIOOutput
+    jxl.o(i.LCD_PORT_init) refers to gpio.o(i.GPIOPinTypeGPIOInput) for GPIOPinTypeGPIOInput
+    jxl.o(i.LCD_delay) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    jxl.o(i.LCD_delay_us) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    jxl.o(i.clear_screen) refers to exp5_6.o(i.transfer_command_lcd) for transfer_command_lcd
+    jxl.o(i.clear_screen) refers to jxl.o(i.transfer_command_lcd) for transfer_command_lcd
+    jxl.o(i.clear_screen) refers to exp5_6.o(i.transfer_data_lcd) for transfer_data_lcd
+    jxl.o(i.clear_screen) refers to jxl.o(i.transfer_data_lcd) for transfer_data_lcd
+    jxl.o(i.display_128x64) refers to exp5_6.o(i.lcd_address) for lcd_address
+    jxl.o(i.display_128x64) refers to jxl.o(i.lcd_address) for lcd_address
+    jxl.o(i.display_128x64) refers to exp5_6.o(i.transfer_data_lcd) for transfer_data_lcd
+    jxl.o(i.display_128x64) refers to jxl.o(i.transfer_data_lcd) for transfer_data_lcd
+    jxl.o(i.display_GB2312_string) refers to exp5_6.o(i.get_and_write_16x16) for get_and_write_16x16
+    jxl.o(i.display_GB2312_string) refers to jxl.o(i.get_and_write_16x16) for get_and_write_16x16
+    jxl.o(i.display_GB2312_string) refers to exp5_6.o(i.get_and_write_8x16) for get_and_write_8x16
+    jxl.o(i.display_GB2312_string) refers to jxl.o(i.get_and_write_8x16) for get_and_write_8x16
+    jxl.o(i.display_GB2312_string) refers to exp5_6.o(.data) for fontaddr
+    jxl.o(i.display_GB2312_string) refers to jxl.o(.data) for fontaddr
+    jxl.o(i.display_graphic_16x16) refers to exp5_6.o(i.lcd_address) for lcd_address
+    jxl.o(i.display_graphic_16x16) refers to jxl.o(i.lcd_address) for lcd_address
+    jxl.o(i.display_graphic_16x16) refers to exp5_6.o(i.transfer_data_lcd) for transfer_data_lcd
+    jxl.o(i.display_graphic_16x16) refers to jxl.o(i.transfer_data_lcd) for transfer_data_lcd
+    jxl.o(i.display_graphic_5x8) refers to exp5_6.o(i.lcd_address) for lcd_address
+    jxl.o(i.display_graphic_5x8) refers to jxl.o(i.lcd_address) for lcd_address
+    jxl.o(i.display_graphic_5x8) refers to exp5_6.o(i.transfer_data_lcd) for transfer_data_lcd
+    jxl.o(i.display_graphic_5x8) refers to jxl.o(i.transfer_data_lcd) for transfer_data_lcd
+    jxl.o(i.display_graphic_8x16) refers to exp5_6.o(i.lcd_address) for lcd_address
+    jxl.o(i.display_graphic_8x16) refers to jxl.o(i.lcd_address) for lcd_address
+    jxl.o(i.display_graphic_8x16) refers to exp5_6.o(i.transfer_data_lcd) for transfer_data_lcd
+    jxl.o(i.display_graphic_8x16) refers to jxl.o(i.transfer_data_lcd) for transfer_data_lcd
+    jxl.o(i.display_string_5x8) refers to exp5_6.o(i.get_and_write_5x8) for get_and_write_5x8
+    jxl.o(i.display_string_5x8) refers to jxl.o(i.get_and_write_5x8) for get_and_write_5x8
+    jxl.o(i.display_string_5x8) refers to exp5_6.o(.data) for fontaddr
+    jxl.o(i.display_string_5x8) refers to jxl.o(.data) for fontaddr
+    jxl.o(i.get_and_write_16x16) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    jxl.o(i.get_and_write_16x16) refers to exp5_6.o(i.send_command_to_ROM) for send_command_to_ROM
+    jxl.o(i.get_and_write_16x16) refers to jxl.o(i.send_command_to_ROM) for send_command_to_ROM
+    jxl.o(i.get_and_write_16x16) refers to exp5_6.o(i.lcd_address) for lcd_address
+    jxl.o(i.get_and_write_16x16) refers to jxl.o(i.lcd_address) for lcd_address
+    jxl.o(i.get_and_write_16x16) refers to jxl.o(i.get_data_from_ROM) for get_data_from_ROM
+    jxl.o(i.get_and_write_16x16) refers to exp5_6.o(i.transfer_data_lcd) for transfer_data_lcd
+    jxl.o(i.get_and_write_16x16) refers to jxl.o(i.transfer_data_lcd) for transfer_data_lcd
+    jxl.o(i.get_and_write_5x8) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    jxl.o(i.get_and_write_5x8) refers to exp5_6.o(i.send_command_to_ROM) for send_command_to_ROM
+    jxl.o(i.get_and_write_5x8) refers to jxl.o(i.send_command_to_ROM) for send_command_to_ROM
+    jxl.o(i.get_and_write_5x8) refers to exp5_6.o(i.lcd_address) for lcd_address
+    jxl.o(i.get_and_write_5x8) refers to jxl.o(i.lcd_address) for lcd_address
+    jxl.o(i.get_and_write_5x8) refers to jxl.o(i.get_data_from_ROM) for get_data_from_ROM
+    jxl.o(i.get_and_write_5x8) refers to exp5_6.o(i.transfer_data_lcd) for transfer_data_lcd
+    jxl.o(i.get_and_write_5x8) refers to jxl.o(i.transfer_data_lcd) for transfer_data_lcd
+    jxl.o(i.get_and_write_8x16) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    jxl.o(i.get_and_write_8x16) refers to exp5_6.o(i.send_command_to_ROM) for send_command_to_ROM
+    jxl.o(i.get_and_write_8x16) refers to jxl.o(i.send_command_to_ROM) for send_command_to_ROM
+    jxl.o(i.get_and_write_8x16) refers to exp5_6.o(i.lcd_address) for lcd_address
+    jxl.o(i.get_and_write_8x16) refers to jxl.o(i.lcd_address) for lcd_address
+    jxl.o(i.get_and_write_8x16) refers to jxl.o(i.get_data_from_ROM) for get_data_from_ROM
+    jxl.o(i.get_and_write_8x16) refers to exp5_6.o(i.transfer_data_lcd) for transfer_data_lcd
+    jxl.o(i.get_and_write_8x16) refers to jxl.o(i.transfer_data_lcd) for transfer_data_lcd
+    jxl.o(i.get_data_from_ROM) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    jxl.o(i.get_data_from_ROM) refers to gpio.o(i.GPIOPinRead) for GPIOPinRead
+    jxl.o(i.initial_lcd) refers to exp5_6.o(i.LCD_PORT_init) for LCD_PORT_init
+    jxl.o(i.initial_lcd) refers to jxl.o(i.LCD_PORT_init) for LCD_PORT_init
+    jxl.o(i.initial_lcd) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    jxl.o(i.initial_lcd) refers to exp5_6.o(i.LCD_delay) for LCD_delay
+    jxl.o(i.initial_lcd) refers to jxl.o(i.LCD_delay) for LCD_delay
+    jxl.o(i.initial_lcd) refers to exp5_6.o(i.transfer_command_lcd) for transfer_command_lcd
+    jxl.o(i.initial_lcd) refers to jxl.o(i.transfer_command_lcd) for transfer_command_lcd
+    jxl.o(i.lcd_address) refers to exp5_6.o(i.transfer_command_lcd) for transfer_command_lcd
+    jxl.o(i.lcd_address) refers to jxl.o(i.transfer_command_lcd) for transfer_command_lcd
+    jxl.o(i.send_command_to_ROM) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    jxl.o(i.send_command_to_ROM) refers to exp5_6.o(i.LCD_delay_us) for LCD_delay_us
+    jxl.o(i.send_command_to_ROM) refers to jxl.o(i.LCD_delay_us) for LCD_delay_us
+    jxl.o(i.transfer_command_lcd) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    jxl.o(i.transfer_data_lcd) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    startup_tm4c129.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_tm4c129.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_tm4c129.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_tm4c129.o(RESET) refers to startup_tm4c129.o(STACK) for __initial_sp
+    startup_tm4c129.o(RESET) refers to startup_tm4c129.o(.text) for Reset_Handler
+    startup_tm4c129.o(RESET) refers to exp5_6.o(i.SysTick_Handler) for SysTick_Handler
+    startup_tm4c129.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_tm4c129.o(.text) refers to system_tm4c129.o(i.SystemInit) for SystemInit
+    startup_tm4c129.o(.text) refers to __main.o(!!!main) for __main
+    startup_tm4c129.o(.text) refers to startup_tm4c129.o(HEAP) for Heap_Mem
+    startup_tm4c129.o(.text) refers to startup_tm4c129.o(STACK) for Stack_Mem
+    system_tm4c129.o(i.SystemCoreClockUpdate) refers to system_tm4c129.o(.data) for SystemCoreClock
+    system_tm4c129.o(i.SystemInit) refers to system_tm4c129.o(.data) for SystemCoreClock
+    gpio.o(i.GPIOIntRegister) refers to gpio.o(i._GPIOIntNumberGet) for _GPIOIntNumberGet
+    gpio.o(i.GPIOIntRegister) refers to interrupt.o(i.IntRegister) for IntRegister
+    gpio.o(i.GPIOIntRegister) refers to interrupt.o(i.IntEnable) for IntEnable
+    gpio.o(i.GPIOIntRegisterPin) refers to gpio.o(i._GPIOIntNumberGet) for _GPIOIntNumberGet
+    gpio.o(i.GPIOIntRegisterPin) refers to interrupt.o(i.IntRegister) for IntRegister
+    gpio.o(i.GPIOIntRegisterPin) refers to interrupt.o(i.IntEnable) for IntEnable
+    gpio.o(i.GPIOIntUnregister) refers to gpio.o(i._GPIOIntNumberGet) for _GPIOIntNumberGet
+    gpio.o(i.GPIOIntUnregister) refers to interrupt.o(i.IntDisable) for IntDisable
+    gpio.o(i.GPIOIntUnregister) refers to interrupt.o(i.IntUnregister) for IntUnregister
+    gpio.o(i.GPIOIntUnregisterPin) refers to gpio.o(i._GPIOIntNumberGet) for _GPIOIntNumberGet
+    gpio.o(i.GPIOIntUnregisterPin) refers to interrupt.o(i.IntDisable) for IntDisable
+    gpio.o(i.GPIOIntUnregisterPin) refers to interrupt.o(i.IntUnregister) for IntUnregister
+    gpio.o(i.GPIOPinConfigure) refers to gpio.o(.constdata) for .constdata
+    gpio.o(i.GPIOPinTypeADC) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeADC) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeCAN) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeCAN) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeComparator) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeComparator) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeComparatorOutput) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeComparatorOutput) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeDIVSCLK) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeDIVSCLK) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeEPI) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeEPI) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeEthernetLED) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeEthernetLED) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeEthernetMII) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeEthernetMII) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeGPIOInput) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeGPIOInput) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeGPIOOutput) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeGPIOOutput) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeGPIOOutputOD) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeGPIOOutputOD) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeHibernateRTCCLK) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeHibernateRTCCLK) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeI2C) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeI2C) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeI2CSCL) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeI2CSCL) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeLCD) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeLCD) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeOneWire) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeOneWire) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypePWM) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypePWM) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeQEI) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeQEI) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeSSI) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeSSI) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeTimer) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeTimer) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeTrace) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeTrace) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeUART) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeUART) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeUSBAnalog) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeUSBAnalog) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeUSBDigital) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeUSBDigital) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeWakeHigh) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeWakeHigh) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeWakeLow) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeWakeLow) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i._GPIOIntNumberGet) refers to gpio.o(.constdata) for .constdata
+    interrupt.o(i.IntDisable) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntEnable) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntIsEnabled) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntMasterDisable) refers to cpu.o(.emb_text) for CPUcpsid
+    interrupt.o(i.IntMasterEnable) refers to cpu.o(.emb_text) for CPUcpsie
+    interrupt.o(i.IntPendClear) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntPendSet) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntPriorityGet) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntPriorityGroupingGet) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntPriorityGroupingSet) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntPriorityMaskGet) refers to cpu.o(.emb_text) for CPUbasepriGet
+    interrupt.o(i.IntPriorityMaskSet) refers to cpu.o(.emb_text) for CPUbasepriSet
+    interrupt.o(i.IntPrioritySet) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntRegister) refers to interrupt.o(vtable) for vtable
+    interrupt.o(i.IntUnregister) refers to interrupt.o(i._IntDefaultHandler) for _IntDefaultHandler
+    interrupt.o(i.IntUnregister) refers to interrupt.o(vtable) for vtable
+    sysctl.o(i.SysCtlClockFreqSet) refers to sysctl.o(.constdata) for .constdata
+    sysctl.o(i.SysCtlClockGet) refers to sysctl.o(.constdata) for .constdata
+    sysctl.o(i.SysCtlClockSet) refers to sysctl.o(.emb_text) for SysCtlDelay
+    sysctl.o(i.SysCtlDeepSleep) refers to cpu.o(.emb_text) for CPUwfi
+    sysctl.o(i.SysCtlIntRegister) refers to interrupt.o(i.IntRegister) for IntRegister
+    sysctl.o(i.SysCtlIntRegister) refers to interrupt.o(i.IntEnable) for IntEnable
+    sysctl.o(i.SysCtlIntUnregister) refers to interrupt.o(i.IntDisable) for IntDisable
+    sysctl.o(i.SysCtlIntUnregister) refers to interrupt.o(i.IntUnregister) for IntUnregister
+    sysctl.o(i.SysCtlSleep) refers to cpu.o(.emb_text) for CPUwfi
+    sysctl.o(i.SysCtlVCOGet) refers to sysctl.o(.constdata) for .constdata
+    systick.o(i.SysTickIntRegister) refers to interrupt.o(i.IntRegister) for IntRegister
+    systick.o(i.SysTickIntUnregister) refers to interrupt.o(i.IntUnregister) for IntUnregister
+    uart.o(i.UARTIntRegister) refers to interrupt.o(i.IntRegister) for IntRegister
+    uart.o(i.UARTIntRegister) refers to interrupt.o(i.IntEnable) for IntEnable
+    uart.o(i.UARTIntRegister) refers to uart.o(.constdata) for .constdata
+    uart.o(i.UARTIntUnregister) refers to interrupt.o(i.IntDisable) for IntDisable
+    uart.o(i.UARTIntUnregister) refers to interrupt.o(i.IntUnregister) for IntUnregister
+    uart.o(i.UARTIntUnregister) refers to uart.o(.constdata) for .constdata
+    __main.o(!!!main) refers to __rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
+    daddsub_clz.o(x$fpl$dadd) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    daddsub_clz.o(x$fpl$dadd) refers to daddsub_clz.o(x$fpl$dsub) for _dsub1
+    daddsub_clz.o(x$fpl$dadd) refers to dretinf.o(x$fpl$dretinf) for __fpl_dretinf
+    daddsub_clz.o(x$fpl$dadd) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    daddsub_clz.o(x$fpl$drsb) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    daddsub_clz.o(x$fpl$drsb) refers to daddsub_clz.o(x$fpl$dadd) for _dadd1
+    daddsub_clz.o(x$fpl$drsb) refers to daddsub_clz.o(x$fpl$dsub) for _dsub1
+    daddsub_clz.o(x$fpl$dsub) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    daddsub_clz.o(x$fpl$dsub) refers to daddsub_clz.o(x$fpl$dadd) for _dadd1
+    daddsub_clz.o(x$fpl$dsub) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    dfixu.o(x$fpl$dfixu) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dfixu.o(x$fpl$dfixu) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    dfixu.o(x$fpl$dfixur) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dfixu.o(x$fpl$dfixur) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    dflt_clz.o(x$fpl$dfltu) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dflt_clz.o(x$fpl$dflt) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dflt_clz.o(x$fpl$dfltn) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dmul.o(x$fpl$dmul) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dmul.o(x$fpl$dmul) refers to dretinf.o(x$fpl$dretinf) for __fpl_dretinf
+    dmul.o(x$fpl$dmul) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for __rt_entry_li
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for __rt_entry_main
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000C) for __rt_entry_postli_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000009) for __rt_entry_postsh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000002) for __rt_entry_presh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for __rt_entry_sh
+    dnaninf.o(x$fpl$dnaninf) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dretinf.o(x$fpl$dretinf) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    __rtentry2.o(.ARM.Collect$$rtentry$$00000008) refers to boardinit2.o(.text) for _platform_post_stackheap_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) refers to libinit.o(.ARM.Collect$$libinit$$00000000) for __rt_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) refers to boardinit3.o(.text) for _platform_post_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to exp5_6.o(i.main) for main
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to exit.o(.text) for exit
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000001) for .ARM.Collect$$rtentry$$00000001
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000008) for .ARM.Collect$$rtentry$$00000008
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for .ARM.Collect$$rtentry$$0000000A
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) for .ARM.Collect$$rtentry$$0000000B
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for .ARM.Collect$$rtentry$$0000000D
+    __rtentry4.o(.ARM.Collect$$rtentry$$00000004) refers to sys_stackheap_outer.o(.text) for __user_setup_stackheap
+    __rtentry4.o(.ARM.exidx) refers to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for .ARM.Collect$$rtentry$$00000004
+    sys_stackheap_outer.o(.text) refers to libspace.o(.text) for __user_perproc_libspace
+    sys_stackheap_outer.o(.text) refers to startup_tm4c129.o(.text) for __user_initial_stackheap
+    exit.o(.text) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for __rt_exit
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002E) for __rt_lib_init_alloca_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002C) for __rt_lib_init_argv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001B) for __rt_lib_init_atexit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000021) for __rt_lib_init_clock_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000032) for __rt_lib_init_cpp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000030) for __rt_lib_init_exceptions_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000001) for __rt_lib_init_fp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001F) for __rt_lib_init_fp_trap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000023) for __rt_lib_init_getenv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000A) for __rt_lib_init_heap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000011) for __rt_lib_init_lc_collate_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000013) for __rt_lib_init_lc_ctype_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000015) for __rt_lib_init_lc_monetary_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000017) for __rt_lib_init_lc_numeric_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000019) for __rt_lib_init_lc_time_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000004) for __rt_lib_init_preinit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000E) for __rt_lib_init_rand_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000033) for __rt_lib_init_return
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001D) for __rt_lib_init_signal_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000025) for __rt_lib_init_stdio_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000C) for __rt_lib_init_user_alloc_1
+    libspace.o(.text) refers to libspace.o(.bss) for __libspace_start
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for .ARM.Collect$$rtexit$$00000000
+    libinit2.o(.ARM.Collect$$libinit$$00000001) refers to fpinit.o(x$fpl$fpinit) for _fp_init
+    libinit2.o(.ARM.Collect$$libinit$$00000010) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000012) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000014) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000016) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000018) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000026) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    libinit2.o(.ARM.Collect$$libinit$$00000027) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    rtexit2.o(.ARM.Collect$$rtexit$$00000003) refers to libshutdown.o(.ARM.Collect$$libshutdown$$00000000) for __rt_lib_shutdown
+    rtexit2.o(.ARM.Collect$$rtexit$$00000004) refers to sys_exit.o(.text) for _sys_exit
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000001) for .ARM.Collect$$rtexit$$00000001
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for .ARM.Collect$$rtexit$$00000003
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for .ARM.Collect$$rtexit$$00000004
+    argv_veneer.o(.emb_text) refers to no_argv.o(.text) for __ARM_get_argv
+    sys_exit.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    _get_argv_nomalloc.o(.text) refers (Special) to hrguard.o(.text) for __heap_region$guard
+    _get_argv_nomalloc.o(.text) refers to defsig_rtmem_outer.o(.text) for __rt_SIGRTMEM
+    _get_argv_nomalloc.o(.text) refers to sys_command.o(.text) for _sys_command_string
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000002) for __rt_lib_shutdown_cpp_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000007) for __rt_lib_shutdown_fp_trap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F) for __rt_lib_shutdown_heap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000010) for __rt_lib_shutdown_return
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A) for __rt_lib_shutdown_signal_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000004) for __rt_lib_shutdown_stdio_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C) for __rt_lib_shutdown_user_alloc_1
+    sys_command.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig_rtmem_outer.o(.text) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_rtmem_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_rtmem_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    rt_raise.o(.text) refers to __raise.o(.text) for __raise
+    rt_raise.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_exit.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_rtmem_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    __raise.o(.text) refers to defsig.o(CL$$defsig) for __default_signal_handler
+    defsig_general.o(.text) refers to sys_wrch.o(.text) for _ttywrch
+    sys_wrch.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_wrch.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig.o(CL$$defsig) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_abrt_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_fpe_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtred_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_stak_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_pvfn_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+

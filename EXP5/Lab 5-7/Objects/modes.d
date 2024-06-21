@@ -1,0 +1,10 @@
+.\objects\modes.o: modes.c
+.\objects\modes.o: JLX12864_2.c
+.\objects\modes.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\modes.o: D:\keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\modes.o: inc/hw_memmap.h
+.\objects\modes.o: inc/hw_types.h
+.\objects\modes.o: driverlib/debug.h
+.\objects\modes.o: driverlib/gpio.h
+.\objects\modes.o: driverlib/pin_map.h
+.\objects\modes.o: driverlib/sysctl.h

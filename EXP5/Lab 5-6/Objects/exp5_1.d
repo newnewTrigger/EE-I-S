@@ -1,0 +1,16 @@
+.\objects\exp5_1.o: exp5_1.c
+.\objects\exp5_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\exp5_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\exp5_1.o: inc/hw_ints.h
+.\objects\exp5_1.o: inc/hw_memmap.h
+.\objects\exp5_1.o: inc/hw_types.h
+.\objects\exp5_1.o: driverlib/debug.h
+.\objects\exp5_1.o: driverlib/gpio.h
+.\objects\exp5_1.o: driverlib/pin_map.h
+.\objects\exp5_1.o: driverlib/sysctl.h
+.\objects\exp5_1.o: driverlib/systick.h
+.\objects\exp5_1.o: driverlib/interrupt.h
+.\objects\exp5_1.o: driverlib/uart.h
+.\objects\exp5_1.o: uartstdio.h
+.\objects\exp5_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\exp5_1.o: tm1638.h

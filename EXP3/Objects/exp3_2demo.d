@@ -1,0 +1,15 @@
+.\objects\exp3_2demo.o: exp3_2DEMO.c
+.\objects\exp3_2demo.o: D:\myTools\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\exp3_2demo.o: D:\myTools\Keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\exp3_2demo.o: D:\myTools\Keil5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\exp3_2demo.o: inc/hw_memmap.h
+.\objects\exp3_2demo.o: inc/hw_types.h
+.\objects\exp3_2demo.o: inc/hw_ints.h
+.\objects\exp3_2demo.o: driverlib/debug.h
+.\objects\exp3_2demo.o: driverlib/gpio.h
+.\objects\exp3_2demo.o: driverlib/pin_map.h
+.\objects\exp3_2demo.o: driverlib/sysctl.h
+.\objects\exp3_2demo.o: driverlib/systick.h
+.\objects\exp3_2demo.o: driverlib/interrupt.h
+.\objects\exp3_2demo.o: driverlib/uart.h
+.\objects\exp3_2demo.o: tm1638.h

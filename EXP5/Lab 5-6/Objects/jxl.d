@@ -1,0 +1,9 @@
+.\objects\jxl.o: JXL.c
+.\objects\jxl.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\jxl.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\jxl.o: inc/hw_memmap.h
+.\objects\jxl.o: inc/hw_types.h
+.\objects\jxl.o: driverlib/debug.h
+.\objects\jxl.o: driverlib/gpio.h
+.\objects\jxl.o: driverlib/pin_map.h
+.\objects\jxl.o: driverlib/sysctl.h

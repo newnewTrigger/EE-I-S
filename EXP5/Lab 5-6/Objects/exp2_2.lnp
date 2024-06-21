@@ -1,0 +1,10 @@
+--cpu=Cortex-M4.fp
+".\objects\exp5_6.o"
+".\objects\jxl.o"
+"C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\rvmdk\driverlib.lib"
+".\objects\startup_tm4c129.o"
+".\objects\system_tm4c129.o"
+--strict --scatter ".\Objects\exp2_2.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\exp2_2.map" -o .\Objects\exp2_2.axf

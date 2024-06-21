@@ -1,0 +1,15 @@
+.\objects\temp.o: temp.c
+.\objects\temp.o: D:\myTools\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\temp.o: D:\myTools\Keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\temp.o: inc/hw_memmap.h
+.\objects\temp.o: inc/hw_types.h
+.\objects\temp.o: driverlib/sysctl.h
+.\objects\temp.o: driverlib/gpio.h
+.\objects\temp.o: driverlib/pin_map.h
+.\objects\temp.o: driverlib/timer.h
+.\objects\temp.o: driverlib/interrupt.h
+.\objects\temp.o: driverlib/pwm.h
+.\objects\temp.o: PWM.h
+.\objects\temp.o: inc/hw_i2c.h
+.\objects\temp.o: driverlib/debug.h
+.\objects\temp.o: driverlib/i2c.h
